@@ -1,0 +1,176 @@
+.smallBanner {
+    position: relative;
+    z-index: 1;
+    color: $whiteColor;
+    padding: 190px 0;
+
+    h1 {
+        text-align: center;
+    }
+
+    .breadcrumbWrap {
+        position: absolute;
+        top: 25px;
+
+        .breadcrumb-item {
+            font-size: var(--fs22);
+            color: $whiteColor;
+            font-weight: 500;
+
+            a {
+                color: inherit;
+                font-size: inherit;
+            }
+
+            &.active {
+                color: $secondaryColor;
+            }
+
+            &::before {
+                color: $whiteColor;
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        background-image: url(../img/statisticsBg.jpg);
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-position: bottom;
+        z-index: -2;
+    }
+
+    &::after {
+        content: "";
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.serviceUl {
+    margin-bottom: 50px;
+    li {
+        &+li {
+            margin-top: 16px;
+        }
+
+        p {
+            width: 80%;
+        }
+    }
+}
+
+.serviceBox.__Box {
+    padding: 0 0px 40px 0px;
+    li{
+        width: 85%;
+    }
+    .servicePkg {
+        margin-top: 0;
+        padding: 25px 0;
+        margin-bottom: 32px;
+        width: 100%;
+        border-bottom: 1px solid $primaryColor;
+    }
+
+    .servicePrice {
+        width: 100%;
+
+        b {
+            font-size: 90px;
+            font-weight: 600;
+        }
+
+        sup {
+            font-size: 24px;
+            top: -45px;
+        }
+
+        p {
+            font-size: var(--fs18);
+        }
+    }
+}
+
+// faqs sec start 
+.faqsInner {
+    .accordion-button {
+        flex-direction: row-reverse;
+        justify-content: start;
+        padding: 15px 0 15px 85px;
+        font-size: var(--fs30);
+        font-weight: 500;
+        margin-bottom: 15px;
+        transition: all 0.5s ease;
+        &:hover{
+            color: $primaryColor;
+            &::after{
+                border-color: $primaryColor;
+                color: $primaryColor;
+            }
+        }
+
+        &::after {
+            content: "+";
+            background-image: unset;
+            margin: 0;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            border: 2px solid $secondaryColor;
+            border-radius: 50%;
+            color: $secondaryColor;
+            font-size: 40px;
+        }
+
+        &:not(.collapsed)::after {
+            content: "-";
+        }
+    }
+
+    .accordion-item {
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .accordion-body {
+        font-size: var(--fs22);
+        line-height: 1.3;
+        padding: 0 0 25px 85px;
+    }
+}
+
+// faqs sec end
+
+.threeColGrid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    .serviceBox.__Box{
+        margin: 0;
+        
+    }
+    &.__oneBox{
+        .serviceBox.__Box{
+            grid-column: 2;
+        }
+    
+    }
+    
+}

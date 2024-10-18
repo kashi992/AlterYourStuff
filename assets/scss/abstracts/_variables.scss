@@ -1,0 +1,40 @@
+$primaryFont: 'Poppins';
+$primaryColor: #15bae8;
+$primaryColor__: #60C9E9;
+$secondaryColor: #fcdf61;
+$blackColor: #000;
+$whiteColor: #fff;
+
+.primaryFont{
+    font-family: $primaryFont;
+}
+.primaryColor{
+    color: $primaryColor;
+}
+.primaryColorBg{
+    background-color: $primaryColor;
+}
+.primaryColor__{
+    color: $primaryColor__;
+}
+.primaryColorBg__{
+    background-color: $primaryColor__;
+}
+.secondaryColor{
+    color: $secondaryColor;
+}
+.secondaryColorBg{
+    background-color: $secondaryColor;
+}
+.blackColor{
+    color: $blackColor;
+}
+.blackColorBg{
+    background-color: $blackColor;
+}
+.whiteColor{
+    color: $whiteColor;
+}
+.whiteColorBg{
+    background-color: $whiteColor;
+}

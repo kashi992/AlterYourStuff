@@ -1,0 +1,599 @@
+@media screen and (max-width: 1680px) {
+    .heroSlick .heroDetails {
+        margin: 30px 0;
+        gap: 16px;
+    }
+
+    .heroSlick {
+        height: calc(100vh - 136px);
+    }
+
+    .customBtn {
+        padding: 18px 30px;
+        border-radius: 10px;
+    }
+
+    .heroSlick .slick-dots li button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .heroSlick .slick-dots li.slick-active button {
+        width: 15px;
+        height: 15px;
+    }
+
+    .aboutWrap .aboutImg {
+        max-height: 640px;
+    }
+
+    .aboutWrap .aboutInner p:first-of-type {
+        margin-top: 20px;
+    }
+
+    .aboutWrap .aboutInner p {
+        margin-top: 10px;
+    }
+
+    .aboutWrap .aboutInner h3 {
+        margin-top: 30px;
+    }
+
+    .chooseContent p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .chooseContent li {
+        gap: 8px 16px;
+        margin-bottom: 30px;
+    }
+
+    .aboutWrap {
+        padding: 100px 0;
+    }
+
+    .serviceBox i {
+        font-size: 70px;
+    }
+
+    .serviceBox h3 {
+        margin-top: 30px;
+    }
+
+    .serviceBox .tickIcon {
+        width: 10px;
+        height: 18px;
+    }
+
+    .serviceBox li {
+        margin-bottom: 10px;
+        grid-template-columns: 16px 1fr;
+        gap: 8px;
+    }
+
+    .serviceBox ul {
+        margin-bottom: 40px;
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .serviceBox .customBtn {
+        height: 65px;
+        border-radius: 12px;
+    }
+
+    .serviceBox {
+        padding: 40px;
+        margin: 0 10px;
+    }
+
+    .servicesWrap .slick-arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chevron {
+        width: 16px;
+        height: 16px;
+    }
+
+    .chooseImg {
+        height: 540px;
+    }
+
+    .statisticsBox span {
+        margin-bottom: 10px;
+    }
+
+    .statisticsWrap {
+        padding: 120px 0;
+    }
+
+    .contactRow {
+        padding: 35px 0;
+    }
+
+    .statisticsBox .iconBox i {
+        font-size: 60px;
+    }
+
+    .contactRow .customBtn {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    // service page start 
+    .smallBanner {
+        padding: 130px 0;
+    }
+
+    .serviceBox.__Box .servicePrice b {
+        font-size: 80px;
+    }
+
+    .serviceBox.__Box .servicePrice sup {
+        font-size: 22px;
+        top: -40px;
+    }
+    .faqsInner .accordion-button::after {
+        width: 50px;
+        height: 50px;
+        font-size: 32px;
+    }
+    .faqsInner .accordion-button {
+        padding: 15px 0 15px 70px;
+        margin-bottom: 10px;
+    }
+    .faqsInner .accordion-body {
+        padding: 0 0 15px 70px;
+    }
+    // service page end
+    .contactInner form input.customBtn {
+        padding: 20px 28px;
+        margin-top: 20px;
+    }
+    .serviceBox .serviceIcon {
+        height: 100px;
+    }
+    .statisticsBox .iconBox {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1570px) {
+    .heroSlick {
+        height: calc(100vh - 121px);
+    }
+
+    .chooseImg {
+        height: 520px;
+    }
+
+    .heroSlick .slick-dots {
+        bottom: 20px;
+    }
+
+    .heroSlick .heroDetails {
+        margin: 24px 0;
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .aboutWrap .aboutImg {
+        max-height: 560px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .heroSlick {
+        height: calc(100vh - 105px);
+    }
+
+    .customBtn {
+        padding: 14px 20px;
+        border-width: 1px;
+        font-size: 16px;
+    }
+
+    .heroSlick .slick-dots li button {
+        width: 8px;
+        height: 8px;
+    }
+
+    .heroSlick .slick-dots li.slick-active button {
+        width: 12px;
+        height: 12px;
+    }
+
+    .aboutWrap {
+        padding: 70px 0;
+    }
+
+    .aboutWrap .aboutInner ul {
+        gap: 12px;
+    }
+
+    .aboutWrap .aboutInner li {
+        padding-left: 20px;
+    }
+
+    .aboutWrap .aboutInner h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .chooseImg {
+        height: 450px;
+    }
+
+    .chooseContent p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .chooseContent li {
+        gap: 4px 16px;
+        margin-bottom: 20px;
+    }
+
+    .heroSlick .slick-dots {
+        gap: 20px;
+    }
+    // service page start 
+    .smallBanner {
+        padding: 100px 0;
+    }
+    .serviceUl li + li {
+        margin-top: 10px;
+    }
+    .serviceBox.__Box .servicePkg {
+        padding: 12px 0;
+        margin-bottom: 12px;
+    }
+    .serviceBox.__Box .servicePrice b {
+        font-size: 60px;
+    }
+    .serviceBox.__Box .servicePrice sup {
+        font-size: 18px;
+        top: -30px;
+    }
+    .serviceBox .customBtn {
+        height: 50px;
+        border-radius: 8px;
+    }
+    .faqsInner .accordion-button::after {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        line-height: 1;
+    }
+    .faqsInner .accordion-button {
+        padding: 15px 0 15px 50px;
+        margin-bottom: 6px;
+    }
+    .faqsInner .accordion-body {
+        padding: 0 0 10px 50px;
+    }
+    .faqsInner .accordion-item {
+        margin-bottom: 8px;
+    }
+    .serviceBox.__Box {
+        padding: 0 0px 30px 0px;
+    }
+    .serviceBox i {
+        font-size: 55px;
+    }
+    .serviceBox i {
+        font-size: 55px;
+    }
+    .serviceBox ul {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .serviceBox li {
+        margin-bottom: 8px;
+        line-height: 1.2;
+        grid-template-columns: 12px 1fr;
+    }
+    .chevron.__top {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    
+    .serviceBox .tickIcon {
+        width: 8px;
+        height: 16px;
+    }
+    .serviceBox .customBtn {
+        padding-left: 20px;
+        height: 50px;
+        border-radius: 10px;
+        padding-right: 20px;
+    }
+    .servicesWrap .slick-arrow {
+        width: 40px;
+        height: 40px;
+    }
+    .chevron {
+        width: 13px;
+        height: 13px;
+    }
+    .chevron.__left {
+        transform: rotate(45deg) translate(1px, -1px);
+    }
+    .chevron.__right {
+        transform: rotate(45deg) translate(-2px, 2px);
+    }
+    
+    
+    // service page end
+  
+    .serviceBox .serviceIcon {
+        height: 85px;
+    }
+    .statisticsBox .iconBox {
+        height: 85px;
+    }
+    
+}
+
+// Ipad pro 
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .heroSlick .heroImg img {
+        object-fit: cover;
+    }
+
+    .aboutWrap .aboutImg {
+        max-height: 100%;
+        height: 520px;
+        position: unset;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .aboutWrap {
+        padding: 60px 0 0 0;
+    }
+
+    .aboutWrap .aboutInner {
+        width: 100%;
+    }
+
+    .servicesWrap .slick-arrow.slick-prev-service {
+        left: 10px;
+    }
+
+    .servicesWrap .slick-arrow.slick-next-service {
+        right: 10px;
+    }
+
+    .statisticsBox .iconBox i {
+        font-size: 40px !important;
+    }
+
+    .statisticsWrap {
+        padding: 70px 0;
+    }
+
+    .contactRow .contactRowInner {
+        grid-template-areas:
+            "a b c"
+            "d d d";
+        gap: 16px;
+    }
+
+    .contactRow .customBtn {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-right: auto;
+    }
+}
+
+//  ipad 
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .serviceBox li {
+        width: 100%;
+    }
+
+    .serviceBox .customBtn {
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .chooseImg {
+        width: 100%;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .chooseContent {
+        width: 100%;
+    }
+
+    .statisticsBox {
+        width: calc(50% - 10px);
+    }
+
+    .contactRow a,
+    .contactRow i {
+        gap: 10px;
+    }
+
+    .contactRow .contactRowInner {
+        grid-template-areas:
+            "a b"
+            "c d";
+        justify-content: space-between;
+    }
+
+    .contactRow .customBtn {
+        margin-right: 0;
+    }
+
+    .statisticsWrap {
+        .d-flex.justify-content-between.align-items-center.flex-wrap {
+            gap: 35px 0;
+        }
+    }
+    .serviceUl li p {
+        width: 100%;
+    }
+    .faqsInner .accordion-button::after {
+        width: 30px;
+        height: 30px;
+    }
+    .serviceBox .tickIcon {
+        width: 8px;
+        height: 15px;
+    }
+    .serviceBox li {
+        grid-template-columns: 10px 1fr;
+    }
+    .serviceBox.__Box .servicePrice b {
+        font-size: 50px;
+        line-height: 1.1;
+    }
+    .serviceBox.__Box .servicePrice sup {
+        font-size: 16px;
+        top: -22px;
+    }
+    .faqsInner .accordion-button {
+        padding: 10px 0 10px 40px;
+    }
+    .faqsInner .accordion-body {
+        padding: 0 0 10px 40px;
+    }
+    .threeColGrid {
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contactInner {
+        grid-template-areas:
+            "b"
+            "a";
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .contactInner .contactBox {
+        gap: 10px 15px;
+    }
+    .threeColGrid.__oneBox{
+        grid-template-columns: repeat(4, 1fr);
+        .serviceBox.__Box{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    }
+    .statisticsBox span {
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    .serviceBox .serviceIcon {
+        height: 75px;
+    }
+    .statisticsBox .iconBox {
+        height: 75px;
+    }
+}
+
+//  mobile 
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .aboutWrap .aboutInner ul {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+
+    .scrollTop {
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .servicesWrap p {
+        width: 100%;
+    }
+
+    .serviceBox i {
+        font-size: 55px;
+    }
+
+    .servicesWrap .slick-arrow {
+        display: none !important;
+    }
+
+    .serviceBox {
+        margin: 0 5px;
+        padding: 24px;
+    }
+
+    .chooseImg {
+        height: 375px;
+    }
+
+    .servicesWrap .slick-list {
+        padding: 6px !important;
+    }
+
+    .contactRow .contactRowInner {
+        grid-template-areas:
+            "a" "b"
+            "c" "d";
+        justify-content: center;
+    }
+
+    .contactRow .customBtn {
+        margin-right: auto;
+    }
+
+    .statisticsWrap {
+        padding: 50px 0;
+    }
+
+    .statisticsBox .iconBox i {
+        font-size: 28px !important;
+    }
+
+    .statisticsBox .iconBox {
+        height: 60px;
+    }
+
+    .aboutWrap .aboutImg {
+        height: 310px;
+
+        img {
+            object-position: bottom;
+        }
+    }
+
+    .statisticsBox span {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .threeColGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .serviceUl {
+        margin-bottom: 40px;
+    }
+    .contactInner form input.customBtn {
+        padding: 16px 20px;
+        margin-top: 20px;
+    }
+    .threeColGrid.__oneBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .threeColGrid.__oneBox .serviceBox.__Box {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+}

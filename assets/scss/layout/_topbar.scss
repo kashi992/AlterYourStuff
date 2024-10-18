@@ -1,0 +1,58 @@
+.topBar{
+    background-color: $secondaryColor;
+    height: 50px;
+  
+    span{
+        font-size: 14px;
+        display: block;
+        color: $blackColor;
+        a{
+            color: inherit;
+        }
+    }
+  
+}
+.contactBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &+ .contactBox{
+        margin-left: 40px;
+    }
+    i{
+        color: $primaryColor;
+    }
+}
+.socialIcon{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i{
+        color: $blackColor;
+    }
+}
+@media screen and (max-width: 1680px) {
+    .topBar {
+        height: 36px;
+    }
+}
+@media screen and (max-width: 1370px) {
+    .topBar .contactBox + .contactBox {
+        margin-left: 24px;
+    }
+    .socialIcon {
+        width: 80px;
+    }
+    .topBar span {
+        font-size: 13px;
+    }
+    .topBar {
+        height: 30px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .topBar span {
+        display: none;
+    }
+}

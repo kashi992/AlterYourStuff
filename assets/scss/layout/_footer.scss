@@ -1,0 +1,109 @@
+.footerBox{
+    max-width: 620px;
+    width: fit-content;
+    color: $whiteColor;
+    p{
+        line-height: 1.5;
+        color: inherit;
+    }
+    .footerLogo{
+        max-width: 200px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    li{
+        margin-bottom: 12px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        a{
+            display: grid;
+            grid-auto-columns: 18px 1fr;
+            color: $whiteColor;
+            gap: 16px;
+            align-items: center;
+            line-height: 1.5;
+            font-size: var(--fs22);
+            transition: all 0.6s ease;
+            &:hover{
+                span{
+color: $secondaryColor;
+                }
+            }
+        }
+        i{
+            color: $secondaryColor;
+        }
+    }
+    h3{
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    span.tickIcon {
+        width: 12px;
+        height: 20px;
+        grid-column: 1;
+    }
+    span{
+        grid-column: 2;
+        transition: all 0.6s ease;
+    }
+}
+.footerBtm{
+    padding: 40px 0;
+    margin-top: 60px;
+    p{
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1680px){
+    .footerBtm {
+        padding: 30px 0;
+        margin-top: 45px;
+    }
+    .footerBox {
+        max-width: 500px;
+    }
+    .footerBox span.tickIcon {
+        width: 10px;
+        height: 18px;
+    }
+    .footerBox li a {
+        gap: 10px;
+    }
+    
+}
+@media screen and (max-width: 1370px){
+    .footerBox {
+        max-width: 430px;
+    }
+    
+}
+@media screen and (max-width: 1198.99px){
+    .footerBox {
+        max-width: 360px;
+    }
+    
+}
+@media screen and (max-width: 991px){
+    .footerBtm {
+        padding: 20px 0;
+        margin-top: 0;
+    }
+    .footerBox {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .footerBox h3 {
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (max-width: 575px){
+    .footerBox .footerLogo {
+        max-width: 150px;
+        margin-bottom: 16px;
+    }
+    
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+// 1. Variables stuff
+@import './abstracts/variables';
+
+
+// 2. Base stuff
+@import 'base/fonts',
+'base/base',
+'base/typography';
+
+// 3. Layout styles
+@import 'layout/topbar', 'layout/navbar', 'layout/footer';
+
+// 4. Page-specific styles
+@import 'views/home', 'views/services', 'views/contact';
+
+// 5. Reponsive
+@import 'responsive';
