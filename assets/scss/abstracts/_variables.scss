@@ -1,7 +1,7 @@
 $primaryFont: 'Poppins';
-$primaryColor: #15bae8;
-$primaryColor__: #60C9E9;
-$secondaryColor: #fcdf61;
+$primaryColor: #AF0005;
+$secondaryColor: #1F2322;
+$secondaryColor__: #E6E6E6;
 $blackColor: #000;
 $whiteColor: #fff;
 
@@ -13,12 +13,6 @@ $whiteColor: #fff;
 }
 .primaryColorBg{
     background-color: $primaryColor;
-}
-.primaryColor__{
-    color: $primaryColor__;
-}
-.primaryColorBg__{
-    background-color: $primaryColor__;
 }
 .secondaryColor{
     color: $secondaryColor;

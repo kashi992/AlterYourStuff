@@ -1,11 +1,11 @@
 .topBar{
-    background-color: $secondaryColor;
+    background-color: $secondaryColor__;
     height: 50px;
   
     span{
         font-size: 14px;
         display: block;
-        color: $blackColor;
+        color: $secondaryColor;
         a{
             color: inherit;
         }
@@ -29,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     i{
-        color: $blackColor;
+        color: $secondaryColor;
     }
 }
 @media screen and (max-width: 1680px) {
