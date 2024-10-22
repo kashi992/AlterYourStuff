@@ -51,6 +51,11 @@
         height: 30px;
     }
 }
+@media screen and (max-width: 991px) {
+    .topBar span {
+       display: none;
+    }
+}
 @media screen and (max-width: 575px) {
     .topBar span {
         display: none;

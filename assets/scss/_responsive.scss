@@ -1,7 +1,8 @@
 @media screen and (max-width: 1680px) {
-    .heroSlick .heroDetails {
-        margin: 30px 0;
-        gap: 16px;
+    .aboutWrap .aboutContent {
+        color: #fff;
+        padding-left: 10%;
+        padding-top: 10%;
     }
 
     .heroSlick {
@@ -11,31 +12,9 @@
     .customBtn {
         padding: 18px 30px;
     }
-
-    .heroSlick .slick-dots li button {
-        width: 10px;
-        height: 10px;
-    }
-
-    .heroSlick .slick-dots li.slick-active button {
-        width: 15px;
-        height: 15px;
-    }
-
     .chevron {
         width: 16px;
         height: 16px;
-    }
-    .statisticsBox span {
-        margin-bottom: 10px;
-    }
-
-    .statisticsWrap {
-        padding: 120px 0;
-    }
-
-    .statisticsBox .iconBox i {
-        font-size: 60px;
     }
 
     .contactRow .customBtn {
@@ -43,54 +22,11 @@
         padding-right: 55px;
     }
 
-    // service page start 
-    .smallBanner {
-        padding: 130px 0;
-    }
-
-    .serviceBox.__Box .servicePrice b {
-        font-size: 80px;
-    }
-
-    .serviceBox.__Box .servicePrice sup {
-        font-size: 22px;
-        top: -40px;
-    }
-    .faqsInner .accordion-button::after {
-        width: 50px;
-        height: 50px;
-        font-size: 32px;
-    }
-    .faqsInner .accordion-button {
-        padding: 15px 0 15px 70px;
-        margin-bottom: 10px;
-    }
-    .faqsInner .accordion-body {
-        padding: 0 0 15px 70px;
-    }
-    // service page end
-    .contactInner form input.customBtn {
-        padding: 20px 28px;
-        margin-top: 20px;
-    }
-    .statisticsBox .iconBox {
-        height: 100px;
-    }
 }
 
 @media screen and (max-width: 1570px) {
     .heroSlick {
         height: calc(100vh - 121px);
-    }
-
-
-    .heroSlick .slick-dots {
-        bottom: 20px;
-    }
-
-    .heroSlick .heroDetails {
-        margin: 24px 0;
-        gap: 12px;
     }
 }
 
@@ -108,57 +44,6 @@
         border-width: 1px;
         font-size: 16px;
     }
-
-    .heroSlick .slick-dots li button {
-        width: 8px;
-        height: 8px;
-    }
-
-    .heroSlick .slick-dots li.slick-active button {
-        width: 12px;
-        height: 12px;
-    }
-
-    .heroSlick .slick-dots {
-        gap: 20px;
-    }
-    // service page start 
-    .smallBanner {
-        padding: 100px 0;
-    }
-    .serviceUl li + li {
-        margin-top: 10px;
-    }
-    .serviceBox.__Box .servicePkg {
-        padding: 12px 0;
-        margin-bottom: 12px;
-    }
-    .serviceBox.__Box .servicePrice b {
-        font-size: 60px;
-    }
-    .serviceBox.__Box .servicePrice sup {
-        font-size: 18px;
-        top: -30px;
-    }
-    .faqsInner .accordion-button::after {
-        width: 40px;
-        height: 40px;
-        font-size: 22px;
-        line-height: 1;
-    }
-    .faqsInner .accordion-button {
-        padding: 15px 0 15px 50px;
-        margin-bottom: 6px;
-    }
-    .faqsInner .accordion-body {
-        padding: 0 0 10px 50px;
-    }
-    .faqsInner .accordion-item {
-        margin-bottom: 8px;
-    }
-    .serviceBox.__Box {
-        padding: 0 0px 30px 0px;
-    }
     .chevron.__top {
         transform: rotate(45deg) translate(2px, 2px);
     }
@@ -174,13 +59,6 @@
         transform: rotate(45deg) translate(-2px, 2px);
     }
     
-    
-    // service page end
-  
-    .statisticsBox .iconBox {
-        height: 85px;
-    }
-    
 }
 
 // Ipad pro 
@@ -189,26 +67,22 @@
     .heroSlick .heroImg img {
         object-fit: cover;
     }
-
-    .statisticsBox .iconBox i {
-        font-size: 40px !important;
-    }
-
-    .statisticsWrap {
-        padding: 70px 0;
-    }
-
-    .contactRow .contactRowInner {
-        grid-template-areas:
-            "a b c"
-            "d d d";
-        gap: 16px;
-    }
-
     .contactRow .customBtn {
         padding-left: 40px;
         padding-right: 40px;
-        margin-right: auto;
+    }
+    .aboutWrap .aboutContent {
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .statWrap .statBox img{
+        width: 50px;
+    }
+    .statWrap .statBox {
+        padding: 0 16px;
+    }
+    .testimonailWrap {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -216,81 +90,56 @@
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
-
-    .statisticsBox {
-        width: calc(50% - 10px);
+    .aboutWrap .aboutContent p {
+        margin: 20px 0;
     }
-
-    .contactRow a,
-    .contactRow i {
-        gap: 10px;
+    .aboutWrap .aboutInner {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
-
-    .contactRow .contactRowInner {
-        grid-template-areas:
-            "a b"
-            "c d";
-        justify-content: space-between;
-    }
-
-    .contactRow .customBtn {
-        margin-right: 0;
-    }
-
-    .statisticsWrap {
-        .d-flex.justify-content-between.align-items-center.flex-wrap {
-            gap: 35px 0;
-        }
-    }
-    .serviceUl li p {
+    .aboutWrap .aboutImg img {
+        position: unset;
+        left: 0;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-    .faqsInner .accordion-button::after {
-        width: 30px;
-        height: 30px;
+    .aboutWrap .aboutImg {
+   grid-row: 2;
     }
-  
-    .serviceBox.__Box .servicePrice b {
-        font-size: 50px;
-        line-height: 1.1;
+    .aboutWrap .aboutContent {
+        padding-left: 0;
+        padding-top: 50px;
     }
-    .serviceBox.__Box .servicePrice sup {
-        font-size: 16px;
-        top: -22px;
-    }
-    .faqsInner .accordion-button {
-        padding: 10px 0 10px 40px;
-    }
-    .faqsInner .accordion-body {
-        padding: 0 0 10px 40px;
-    }
-    .threeColGrid {
-        gap: 16px;
+    .statWrap .container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px 0;
     }
-    .contactInner {
-        grid-template-areas:
-            "b"
-            "a";
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
+    .servicesWrap h2 {
+        margin-bottom: 30px;
     }
-    .contactInner .contactBox {
-        gap: 10px 15px;
+    .serviceBox h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
-    .threeColGrid.__oneBox{
-        grid-template-columns: repeat(4, 1fr);
-        .serviceBox.__Box{
-            grid-column-start: 2;
-            grid-column-end: 4;
-        }
+    .testimonailWrap .tesimonialBox {
+        margin-top: 20px;
+        gap: 10px;
+        padding: 0 10px;
     }
-    .statisticsBox span {
-        padding-top: 30px;
-        margin-top: 30px;
+    .contactRow .contactRowInner {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 0;
     }
-    .statisticsBox .iconBox {
-        height: 75px;
+    .contactRow .customBtn {
+        grid-column: 1 / 3;
+        margin: auto;
+    }
+    .heroSlick .contentBlock {
+        width: 80%;
+    }
+    .navWrap .navbar-brand img {
+        object-fit: contain;
     }
 }
 
@@ -304,49 +153,64 @@
         right: 20px;
         bottom: 20px;
     }
+    .navWrap .customBtn {
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+    .heroWrap .slick-arrow .chevron {
+        width: 15px;
+        height: 15px;
+    }
+    .heroWrap .slick-arrow.slick-prev-hero {
+        left: 10px;
+    }
+    .heroWrap .slick-arrow.slick-next-hero {
+        right: 10px;
+    }
+    .heroSlick .contentBlock {
+        width: 90%;
+        gap: 10px;
+    }
+    .aboutWrap .aboutContent p {
+        margin: 15px 0;
+    }
+    .statWrap .container {
+        grid-template-columns: 1fr;
+        gap: 16px 0;
+    }
+    .statWrap .statBox h3 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .statWrap .statBox {
+      padding-bottom: 16px;
+      padding-right: 0;
+      padding-left: 0;
+        border-right: 0px;
+        border-bottom: 2px dashed #E6E6E6;
+    }
+    .statWrap .statBox:first-child {
+        padding-right: 0;
+    }
     .contactRow .contactRowInner {
-        grid-template-areas:
-            "a" "b"
-            "c" "d";
-        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 16px 0;
     }
-
-    .contactRow .customBtn {
-        margin-right: auto;
+    .contactRow p {
+        line-height: 1.5;
+        grid-column: 1 / 3;
     }
-
-    .statisticsWrap {
-        padding: 50px 0;
+    .contactRow a.contactItem p {
+        grid-column: 2 / 3;
     }
-
-    .statisticsBox .iconBox i {
-        font-size: 28px !important;
-    }
-
-    .statisticsBox .iconBox {
+    .contactRow a.contactItem .icon {
+        width: 60px;
         height: 60px;
     }
-
-    .statisticsBox span {
-        margin-top: 20px;
-        padding-top: 20px;
+    .contactRow a.contactItem {
+        gap: 0px;
     }
-    .threeColGrid {
-        grid-template-columns: repeat(1, 1fr);
+    .navWrap .navbar {
+        padding: 3px 0;
     }
-    .serviceUl {
-        margin-bottom: 40px;
-    }
-    .contactInner form input.customBtn {
-        padding: 16px 20px;
-        margin-top: 20px;
-    }
-    .threeColGrid.__oneBox {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .threeColGrid.__oneBox .serviceBox.__Box {
-        grid-column-start: auto;
-        grid-column-end: auto;
-    }
-
 }

@@ -135,20 +135,19 @@ $(document).ready(function () {
         responsive: [{
             breakpoint: 1100,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
             }
 
         }, {
             breakpoint: 800,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
             }
         }, {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrow: false,
             }
         }]
     });
@@ -196,7 +195,10 @@ $(document).ready(function () {
     //    onclick nav-link offset sections start
     $('.navWrap a.nav-link').click(function (e) {
         e.preventDefault();
-
+        $('.navbar-collapse').removeClass("show");
+        $("html").removeClass("__html");
+        // Check the new state after toggling
+        $overlay.removeClass("__show");
         // Get the target section's ID from the href attribute
         var targetId = $(this).attr('href');
         var targetElement = $(targetId);
