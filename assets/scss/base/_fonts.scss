@@ -1,70 +1,70 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Light.eot');
-    src: url('../fonts/Poppins-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-Light.woff2') format('woff2'),
-        url('../fonts/Poppins-Light.woff') format('woff'),
-        url('../fonts/Poppins-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-ExtraBold.eot');
-    src: url('../fonts/Poppins-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Poppins-ExtraBold.woff') format('woff'),
-        url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-family: 'Crimson Text';
+    src: url('../fonts/CrimsonText-Bold.eot');
+    src: url('../fonts/CrimsonText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CrimsonText-Bold.woff2') format('woff2'),
+        url('../fonts/CrimsonText-Bold.woff') format('woff'),
+        url('../fonts/CrimsonText-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Bold.eot');
-    src: url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-Bold.woff2') format('woff2'),
-        url('../fonts/Poppins-Bold.woff') format('woff'),
-        url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-family: 'Crimson Text';
+    src: url('../fonts/CrimsonText-Italic.eot');
+    src: url('../fonts/CrimsonText-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CrimsonText-Italic.woff2') format('woff2'),
+        url('../fonts/CrimsonText-Italic.woff') format('woff'),
+        url('../fonts/CrimsonText-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/CrimsonText-BoldItalic.eot');
+    src: url('../fonts/CrimsonText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CrimsonText-BoldItalic.woff2') format('woff2'),
+        url('../fonts/CrimsonText-BoldItalic.woff') format('woff'),
+        url('../fonts/CrimsonText-BoldItalic.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Medium.eot');
-    src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-Medium.woff2') format('woff2'),
-        url('../fonts/Poppins-Medium.woff') format('woff'),
-        url('../fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'Crimson Text';
+    src: url('../fonts/CrimsonText-SemiBoldItalic.eot');
+    src: url('../fonts/CrimsonText-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CrimsonText-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/CrimsonText-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/CrimsonText-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-SemiBold.eot');
-    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
-        url('../fonts/Poppins-SemiBold.woff') format('woff'),
-        url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-family: 'Crimson Text';
+    src: url('../fonts/CrimsonText-SemiBold.eot');
+    src: url('../fonts/CrimsonText-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CrimsonText-SemiBold.woff2') format('woff2'),
+        url('../fonts/CrimsonText-SemiBold.woff') format('woff'),
+        url('../fonts/CrimsonText-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Regular.eot');
-    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-Regular.woff2') format('woff2'),
-        url('../fonts/Poppins-Regular.woff') format('woff'),
-        url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-family: 'Crimson Text';
+    src: url('../fonts/CrimsonText-Regular.eot');
+    src: url('../fonts/CrimsonText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CrimsonText-Regular.woff2') format('woff2'),
+        url('../fonts/CrimsonText-Regular.woff') format('woff'),
+        url('../fonts/CrimsonText-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

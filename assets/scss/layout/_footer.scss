@@ -1,22 +1,79 @@
-.footerBox{
+footer {
+    background: $primaryColor;
+}
+
+.footerBtm {
+    background-color: $secondaryColor__;
+}
+
+.footerBox {
     max-width: 620px;
     width: fit-content;
     color: $whiteColor;
-    p{
+
+    p {
         line-height: 1.5;
         color: inherit;
     }
-    .footerLogo{
-        max-width: 200px;
-        width: 100%;
-        margin-bottom: 30px;
+
+    .phoneNumber {
+        color: $secondaryColor__;
+        font-size: var(--fs40);
+        font-weight: 700;
+        display: block;
+        margin: 30px 0;
     }
-    li{
+
+    .socialIcon {
+        gap: 16px;
+        width: fit-content;
+
+        a {
+            width: 45px;
+            height: 45px;
+            background-color: $secondaryColor__;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+
+            i {
+                font-size: 16px;
+            }
+
+            &:hover {
+                border-radius: 50%;
+                background-color: $secondaryColor;
+
+                i {
+                    color: $secondaryColor__;
+                }
+            }
+        }
+    }
+
+    .footerLogo {
+        max-width: 200px;
+        margin-bottom: 30px;
+        height: 140px;
+        background-color: $whiteColor;
+        width: fit-content;
+        border-radius: 3px;
+        padding: 5px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    li {
         margin-bottom: 12px;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0;
         }
-        a{
+
+        a {
             display: grid;
             grid-auto-columns: 18px 1fr;
             color: $whiteColor;
@@ -25,85 +82,101 @@
             line-height: 1.5;
             font-size: var(--fs22);
             transition: all 0.6s ease;
-            &:hover{
-                span{
-color: $secondaryColor;
+
+            &:hover {
+                span {
+                    color: $secondaryColor;
                 }
             }
         }
-        i{
-            color: $secondaryColor;
+
+        i {
+            color: $whiteColor;
         }
     }
-    h3{
+
+    h3 {
         margin-bottom: 20px;
         font-weight: 600;
     }
+
     span.tickIcon {
         width: 12px;
         height: 20px;
         grid-column: 1;
     }
-    span{
+
+    span {
         grid-column: 2;
         transition: all 0.6s ease;
     }
 }
-.footerBtm{
+
+.footerBtm {
     padding: 40px 0;
     margin-top: 60px;
-    p{
+
+    p {
         font-weight: 500;
     }
 }
 
-@media screen and (max-width: 1680px){
+@media screen and (max-width: 1680px) {
     .footerBtm {
         padding: 30px 0;
         margin-top: 45px;
     }
+
     .footerBox {
         max-width: 500px;
     }
+
     .footerBox span.tickIcon {
         width: 10px;
         height: 18px;
     }
+
     .footerBox li a {
         gap: 10px;
     }
-    
+
 }
-@media screen and (max-width: 1370px){
+
+@media screen and (max-width: 1370px) {
     .footerBox {
         max-width: 430px;
     }
-    
+
 }
-@media screen and (max-width: 1198.99px){
+
+@media screen and (max-width: 1198.99px) {
     .footerBox {
         max-width: 360px;
     }
-    
+
 }
-@media screen and (max-width: 991px){
+
+@media screen and (max-width: 991px) {
     .footerBtm {
         padding: 20px 0;
         margin-top: 0;
     }
+
     .footerBox {
         max-width: 100%;
         margin-bottom: 30px;
     }
+
     .footerBox h3 {
         margin-bottom: 10px;
     }
-    
+
 }
-@media screen and (max-width: 575px){
+
+@media screen and (max-width: 575px) {
     .footerBox .footerLogo {
         max-width: 150px;
         margin-bottom: 16px;
     }
-    
+
 }

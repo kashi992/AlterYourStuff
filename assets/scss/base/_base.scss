@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -6,11 +7,13 @@ body {
     font-family: $primaryFont;
     font-size: var(--fs16);
     line-height: 1.2;
+    scroll-behavior: smooth;
 }
 
 body,
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -19,6 +22,7 @@ html {
 html.__html{
     overflow: hidden;
 }
+
 img {
     max-width: 100%;
 }
@@ -153,11 +157,12 @@ ul {
     font-size: var(--fs30);
     font-weight: 500;
     border: 2px solid transparent;
-    border-radius: 15px;
     transition: all 0.5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase;
 }
 
 .slick-track {

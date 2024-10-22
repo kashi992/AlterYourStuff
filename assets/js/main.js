@@ -12,8 +12,10 @@ $(document).ready(function () {
         // Toggle navbar class
         if (scroll > 50) {
             navbar.addClass('scrolled');
+            $("body").addClass("bodyoffset");
         } else {
             navbar.removeClass('scrolled');
+            $("body").removeClass("bodyoffset");
         }
 
         // Toggle scroll to top button class
@@ -32,19 +34,18 @@ $(document).ready(function () {
 
     // hero slick start 
     $('.heroSlick').slick({
-        speed: 1500,
+        speed: 1000,
         autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        arrows: false,
+        arrows: true,
         swipe: true,
         swipeToSlide: true,
-        dots: true,
-
-        // nextArrow: '.slick-next-testi',
-        // prevArrow: '.slick-prev-testi',
+        dots: false,
+        nextArrow: '.slick-next-hero',
+        prevArrow: '.slick-prev-hero',
 
         responsive: [{
             breakpoint: 1024,
@@ -65,23 +66,37 @@ $(document).ready(function () {
             }
         }]
     });
+
+    const $currentBlocks = $('.contentBlock');
+    // Trigger disintegration effect before slide changes
+    $('.heroSlick').on('beforeChange', function () {
+        $currentBlocks.each(function () {
+            $(this).addClass('_block');
+        });
+    });
+
+    // Reset blocks after slide change for reusability
+    $('.heroSlick').on('afterChange', function () {
+        $currentBlocks.each(function () {
+            $(this).removeClass('_block');
+        });
+    });
+
     // hero slick end
 
     // service slick start 
     $('.serviceInner').slick({
         speed: 1500,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: false,
-        arrows: true,
+        infinite: true,
+        arrows: false,
         swipe: true,
         swipeToSlide: true,
         dots: false,
-
-        nextArrow: '.slick-next-service',
-        prevArrow: '.slick-prev-service',
+        centerMode: true,
 
         responsive: [{
             breakpoint: 1100,
@@ -105,7 +120,41 @@ $(document).ready(function () {
     });
     // service slick end
 
-     //    onclick outside navbar 
+    // testimonail slick start 
+    $('.tesimonialSlick').slick({
+        speed: 1500,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        swipe: true,
+        swipeToSlide: true,
+        dots: true,
+        responsive: [{
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 3,
+            }
+
+        }, {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrow: false,
+            }
+        }]
+    });
+    // testimonail slick end
+
+    //    onclick outside navbar 
     var $navbar = $('#navbarSupportedContent');
     var $navbarToggler = $('.navbar-toggler');
     var $crossIcon = $('.crossIcon');
@@ -143,5 +192,24 @@ $(document).ready(function () {
         }
     });
     //    onclick outside navbar 
+
+    //    onclick nav-link offset sections start
+    $('.navWrap a.nav-link').click(function (e) {
+        e.preventDefault();
+
+        // Get the target section's ID from the href attribute
+        var targetId = $(this).attr('href');
+        var targetElement = $(targetId);
+
+        // Get the height of the fixed navbar
+        var navbarHeight = $('.navbar').outerHeight();
+
+        // Scroll to the target section with the adjusted offset
+        $('html, body').animate({
+            scrollTop: targetElement.offset().top - navbarHeight
+        }, 800);  // 800 is the duration of the animation in milliseconds
+    });
+    //    onclick nav-link offset sections end
+
 });
 

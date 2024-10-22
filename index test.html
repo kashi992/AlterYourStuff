@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alter Your Stuff</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- slick css  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<style>
+    body{
+        height: 100vh;
+    }
+    body *{
+        height: 100%;
+    }
+    // Vars
+@slick-dot-width: 20px;
+@slick-dot-height: 20px;
+@slick-dot-color: white;
+@slick-dot-color-active: @slick-dot-color;
+@slick-opacity-default: 0.75;
+@slick-opacity-on-hover: 1;
+@slick-opacity-not-active: 0.25;
+
+// Base
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+// Design Slider
+.slider, .slide {
+  @media (min-width: 992px) {
+    height: 80vh;
+  }
+}
+
+.slide {
+  position: relative;
+  .slide__img {
+    @media (min-width: 992px) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      height: auto;
+      opacity: 1 !important;
+      animation-duration: 3s;
+      transition: all 1s ease;
+    }
+  }
+  .slide__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &--headings {
+      text-align: center;
+      color: #FFF;
+      h2 {
+        font-size: 4.5rem;
+        margin: 10px 0;
+      }
+      .animated {
+        transition: all .5s ease;
+      }
+    }
+  }
+}
+
+// Change animation presets
+.slider [data-animation-in] {
+    opacity: 0;
+    animation-duration: 1.5s;
+    transition: opacity 0.5s ease 0.3s;
+}
+
+// Dots
+.slick-dotted .slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 25px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            border: 0;
+            display: block;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover, &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.simple-dots {
+  .slick-dots {
+    li {
+      width: @slick-dot-width;
+      height: @slick-dot-height;
+      button {
+        border-radius: 50%;
+        background-color: @slick-dot-color;
+        opacity: @slick-opacity-not-active;
+        width: @slick-dot-width;
+        height: @slick-dot-height;
+        &:hover, &:focus {
+          opacity: @slick-opacity-on-hover;
+        }
+      }
+      &.slick-active button {
+        color: @slick-dot-color-active;
+        opacity: @slick-opacity-default;
+      }
+    }
+  }
+}
+
+.stick-dots {
+  .slick-dots {
+    li {
+      height: 3px;
+      width: 50px;
+      button {
+        position: relative;
+        background-color: @slick-dot-color;
+        opacity: @slick-opacity-not-active;
+        width: 50px;
+        height: 3px;
+        padding: 0;
+        &:hover, &:focus {
+          opacity: @slick-opacity-on-hover;
+        }
+      }
+      &.slick-active button {
+        color: @slick-dot-color-active;
+        opacity: @slick-opacity-default;
+        &:hover, &:focus {
+          opacity: @slick-opacity-on-hover;
+        }
+      }
+    }
+  }
+}
+
+/* /////////// IMAGE ZOOM /////////// */
+@keyframes zoomInImage {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+.zoomInImage {
+  animation-name: zoomInImage;
+}
+
+@keyframes zoomOutImage {
+  from {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.zoomOutImage {
+  animation-name: zoomOutImage;
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+        <div class="slider stick-dots">
+          <div class="slide">
+            <div class="slide__img">
+              <img src="" alt="" data-lazy="https://alexandrebuffet.fr/codepen/images/full/nature_01.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
+            </div>
+            <div class="slide__content">
+              <div class="slide__content--headings">
+                 <h2 class="animated" data-animation-in="fadeInUp">Slide me to the moon</h2>
+                 <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.3">With awesome animations</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__img">
+              <img src="" alt="" data-lazy="https://alexandrebuffet.fr/codepen/images/full/nature_02.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
+            </div>
+            <div class="slide__content">
+              <div class="slide__content--headings">
+                 <h2 class="animated" data-animation-in="fadeInRight">Slide me to the moon</h2>
+                 <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">With awesome animations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <main>
+      </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- slick JS  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.js"></script>
+<script>
+    /*
+** With Slick Slider Plugin : https://github.com/marvinhuebner/slick-animation
+** And Slick Animation Plugin : https://github.com/marvinhuebner/slick-animation
+*/
+
+// Init slick slider + animation
+$('.slider').slick({
+  autoplay: true,
+  speed: 800,
+  lazyLoad: 'progressive',
+  arrows: false,
+  dots: true,
+}).slickAnimation();
+
+</script>
+</body>
+
+</html>

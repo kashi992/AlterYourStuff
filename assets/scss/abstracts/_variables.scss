@@ -1,4 +1,7 @@
-$primaryFont: 'Poppins';
+
+
+$primaryFont: 'Crimson Text';
+$secondaryFont: 'DM Sans", sans-serif';
 $primaryColor: #AF0005;
 $secondaryColor: #1F2322;
 $secondaryColor__: #E6E6E6;
@@ -19,6 +22,12 @@ $whiteColor: #fff;
 }
 .secondaryColorBg{
     background-color: $secondaryColor;
+}
+.secondaryColor__{
+    color: $secondaryColor__;
+}
+.secondaryColorBg__{
+    background-color: $secondaryColor__;
 }
 .blackColor{
     color: $blackColor;
