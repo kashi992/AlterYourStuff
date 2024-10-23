@@ -193,24 +193,37 @@ $(document).ready(function () {
     //    onclick outside navbar 
 
     //    onclick nav-link offset sections start
-    $('.navWrap a.nav-link').click(function (e) {
-        e.preventDefault();
-        $('.navbar-collapse').removeClass("show");
+    // Handle clicks on all 'a.nav-link' elements
+    $('a.nav-link').click(function (e) {
+        e.preventDefault();  // Prevent default anchor behavior
+
+        // Get the href attribute of the clicked link (used to match corresponding links)
+        var targetHref = $(this).attr('href');
+
+        // Remove 'active' class from all links inside '.navWrap'
+        $('.navWrap a.nav-link').removeClass('active');
+
+        // If the clicked link is inside '.navWrap'
+        if ($(this).closest('.navWrap').length > 0) {
+            // Add 'active' class to the clicked '.navWrap a.nav-link'
+            $(this).addClass('active');
+        } else {
+            // If the clicked link is outside '.navWrap', find the corresponding '.navWrap a.nav-link'
+            $('.navWrap a.nav-link[href="' + targetHref + '"]').addClass('active');
+        }
+
+        // Collapse the navbar after a link is clicked
+        $('.navbar-collapse').removeClass('show');
         $("html").removeClass("__html");
-        // Check the new state after toggling
-        $overlay.removeClass("__show");
-        // Get the target section's ID from the href attribute
-        var targetId = $(this).attr('href');
-        var targetElement = $(targetId);
 
-        // Get the height of the fixed navbar
+        // Smooth scrolling to the target section
+        var targetElement = $(targetHref);
         var navbarHeight = $('.navbar').outerHeight();
-
-        // Scroll to the target section with the adjusted offset
         $('html, body').animate({
             scrollTop: targetElement.offset().top - navbarHeight
-        }, 800);  // 800 is the duration of the animation in milliseconds
+        }, 800);  // Animation duration in milliseconds
     });
+
     //    onclick nav-link offset sections end
 
 });

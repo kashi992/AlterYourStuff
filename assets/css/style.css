@@ -712,6 +712,9 @@ footer {
   width: fit-content;
   color: #fff;
 }
+.footerBox a:hover {
+  color: #1F2322;
+}
 .footerBox p {
   line-height: 1.5;
   color: inherit;
