@@ -28,6 +28,20 @@
     .heroSlick {
         height: calc(100vh - 121px);
     }
+    .serviceBox p {
+        line-height: 1.3;
+    }
+    .serviceBox h3 {
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+    .serviceBox {
+        min-height: 460px;
+        padding: 30px 16px;
+    }
+    .contactRow p {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -35,6 +49,22 @@
 }
 
 @media screen and (max-width: 1370px) {
+    .titleDot {
+        font-size: 16px;
+    }
+    .serviceBox .serviceImg {
+        padding: 20px;
+    }
+    .contactRow p {
+        font-size: 22px;
+    }
+    .serviceBox {
+        min-height: 445px;
+    }
+    .servicesWrap .slick-arrow {
+        height: 50px;
+        width: 50px;
+    }
     .heroSlick {
         height: calc(100vh - 105px);
     }
@@ -64,6 +94,12 @@
 // Ipad pro 
 // `xl` applies to large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
+    .servicesWrap .slick-arrow.slick-prev-service {
+        left: 0px;
+    }
+    .servicesWrap .slick-arrow.slick-next-service {
+        right: 0px;
+    }
     .heroSlick .heroImg img {
         object-fit: cover;
     }
@@ -90,6 +126,15 @@
 
 // `lg` applies to medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+    .contactRow p {
+        font-size: 20px;
+    }
+    .mapSec p {
+        width: 100%;
+    }
+    .statWrap .statBox:last-child {
+        border-right: 2px dashed #E6E6E6;
+    }
     .aboutWrap .aboutContent p {
         margin: 20px 0;
     }
@@ -111,7 +156,7 @@
         padding-left: 0;
         padding-top: 50px;
     }
-    .statWrap .container {
+    .statWrap .d-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 0;
     }
@@ -174,7 +219,7 @@
     .aboutWrap .aboutContent p {
         margin: 15px 0;
     }
-    .statWrap .container {
+    .statWrap .d-grid {
         grid-template-columns: 1fr;
         gap: 16px 0;
     }
@@ -188,6 +233,7 @@
       padding-left: 0;
         border-right: 0px;
         border-bottom: 2px dashed #E6E6E6;
+        text-align: center;
     }
     .statWrap .statBox:first-child {
         padding-right: 0;
@@ -195,6 +241,7 @@
     .contactRow .contactRowInner {
         grid-template-columns: 1fr;
         gap: 16px 0;
+        text-align: center;
     }
     .contactRow p {
         line-height: 1.5;
@@ -209,8 +256,43 @@
     }
     .contactRow a.contactItem {
         gap: 0px;
+        width: fit-content;
+        margin-left: auto;margin-right: auto;
+        text-align: start;
     }
     .navWrap .navbar {
         padding: 3px 0;
     }
+    .testimonailWrap .testimonialContent {
+        padding: 40px 0px;
+    }
+    .testimonailWrap .tesimonialBox .profileIcon {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .aboutWrap .aboutContent {
+        text-align: center;
+    }
+    .aboutWrap .aboutContent .titleDot {
+        align-items: center;
+    }
+    .aboutWrap .customBtn {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .statWrap .statBox:last-child {
+        border-right: 0;
+        padding-bottom: 0;
+    }
+    .statWrap .statBox p {
+margin-bottom: 0;
+    }
+    .servicesWrap .slick-arrow {
+        height: 40px;
+        width: 40px;
+    }
+    .contactRow p {
+        font-size: 18px;
+    }
+ 
 }

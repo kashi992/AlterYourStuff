@@ -34,6 +34,7 @@
     width: 20px;
     height: 20px;
     display: inline-block;
+    border-radius: 2px;
 
     &.__top {
         border-left-color: $secondaryColor;
@@ -132,7 +133,6 @@
     height: calc(100vh - 170px);
 
     .contentBlock {
-        transition: transform 0.6s;
         height: 100%;
         color: $whiteColor;
         display: flex;
@@ -144,19 +144,25 @@
         width: 75%;
         gap: 20px;
 
-        h2,
+        p {
+            line-height: 1.5;
+        }
+
+        h1 {
+            line-height: 1;
+        }
+
+        h1,
         p,
         .customBtn {
             transform: unset;
             transition: transform 0.6s;
-            line-height: 1.5;
         }
 
         &._block {
             opacity: 0;
-            transition: transform 0.6s;
 
-            h2 {
+            h1 {
                 transform: translateY(-40px);
             }
 
@@ -233,8 +239,8 @@
 
     .aboutContent {
         color: $whiteColor;
-        padding-left: 15%;
-        padding-top: 15%;
+        padding-left: 40px;
+        padding-top: 40px;
 
         .titleDot {
             align-items: start;
@@ -242,6 +248,10 @@
 
         p {
             margin: 30px 0;
+        }
+
+        h2 {
+            line-height: 1;
         }
     }
 
@@ -265,8 +275,15 @@
 .statWrap {
     background-color: $primaryColor;
 
-    .container {
-        display: grid;
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    .d-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 
@@ -277,7 +294,7 @@
         h3 {
             margin-top: 30px;
             margin-bottom: 16px;
-            font-size: var(--fs50);
+            font-size: var(--fs40);
             color: $whiteColor;
             font-weight: 600;
         }
@@ -303,7 +320,7 @@
 .titleDot {
     width: fit-content;
     position: relative;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
     display: inline-flex;
     line-height: 1.5;
@@ -332,6 +349,44 @@
         margin-bottom: 50px;
         font-size: var(--fs65);
     }
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $primaryColor;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+
+        &.slick-disabled {
+            opacity: 0.5;
+        }
+
+        .chevron {
+            &.__right {
+                border-right-color: $secondaryColor__;
+                border-top-color: $secondaryColor__;
+            }
+
+            &.__left {
+                border-left-color: $secondaryColor__;
+                border-bottom-color: $secondaryColor__;
+            }
+        }
+
+        &.slick-prev-service {
+            left: -60px;
+        }
+
+        &.slick-next-service {
+            right: -60px;
+        }
+    }
 }
 
 .serviceBox {
@@ -340,6 +395,8 @@
     display: flex !important;
     flex-direction: column;
     align-items: center;
+    min-height: 619px;
+    justify-content: center;
 
     &.slick-center {
         background-color: #f6f2ee;
@@ -353,9 +410,11 @@
         position: relative;
 
         img {
-            aspect-ratio: auto 189 / 189;
+            // aspect-ratio: auto 189 / 189;
             border-radius: 50%;
             transition: 0.5s;
+            height: 185px;
+            width: 185px;
         }
 
         &::before {
@@ -387,13 +446,13 @@
 
     h3 {
         margin-top: 35px;
-        font-size: var(--fs50);
+        font-size: var(--fs40);
         line-height: 1.3;
         margin-bottom: 20px;
     }
 
     p {
-        font-size: var(--fs30);
+        font-size: var(--fs26);
         line-height: 1.5;
         font-family: $secondaryFont;
         font-weight: 400;
@@ -424,7 +483,8 @@
     color: $whiteColor;
 
     p {
-        line-height: 1.8;
+        line-height: 1.4;
+        font-size: 28px;
     }
 
     a.contactItem {
@@ -467,7 +527,8 @@
                     opacity: 1;
                     transform: scale(1.1);
                 }
-                i{
+
+                i {
                     color: $primaryColor;
                 }
             }
@@ -615,3 +676,17 @@
 }
 
 // testimonail sec end
+
+.mapSec {
+    text-align: center;
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

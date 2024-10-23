@@ -87,16 +87,20 @@ $(document).ready(function () {
     // service slick start 
     $('.serviceInner').slick({
         speed: 1500,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        infinite: true,
-        arrows: false,
+        infinite: false,
+        arrows: true,
         swipe: true,
         swipeToSlide: true,
         dots: false,
         centerMode: true,
+        initialSlide: 2,
+
+        nextArrow: '.slick-next-service',
+        prevArrow: '.slick-prev-service',
 
         responsive: [{
             breakpoint: 1100,
