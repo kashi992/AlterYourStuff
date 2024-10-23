@@ -1274,8 +1274,7 @@ footer {
   padding-bottom: 20px;
 }
 .contactRow .customBtn:hover {
-  background-color: #1F2322;
-  border-color: #1F2322;
+  background-color: #fff;
   color: #AF0005;
 }
 
