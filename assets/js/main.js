@@ -223,7 +223,6 @@ $(document).ready(function () {
             scrollTop: targetElement.offset().top - navbarHeight
         }, 800);  // Animation duration in milliseconds
     });
-
     //    onclick nav-link offset sections end
 
 });
