@@ -204,10 +204,11 @@
         border-color: $whiteColor;
         background-color: unset;
         color: $whiteColor;
+        font-weight: 600;
 
         &:hover {
             background-color: $whiteColor;
-            color: $blackColor;
+            color: $primaryColor;
         }
     }
 }
@@ -252,10 +253,10 @@
     .customBtn {
         border-color: $secondaryColor__;
         color: $secondaryColor__;
+        font-weight: 600;
 
         &:hover {
-            background-color: $secondaryColor;
-            border-color: $primaryColor;
+            background-color: $whiteColor;
             color: $primaryColor;
         }
     }

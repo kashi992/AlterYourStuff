@@ -1026,10 +1026,11 @@ footer {
   border-color: #fff;
   background-color: unset;
   color: #fff;
+  font-weight: 600;
 }
 .heroSlick .customBtn:hover {
   background-color: #fff;
-  color: #000;
+  color: #AF0005;
 }
 
 .aboutWrap {
@@ -1062,10 +1063,10 @@ footer {
 .aboutWrap .customBtn {
   border-color: #E6E6E6;
   color: #E6E6E6;
+  font-weight: 600;
 }
 .aboutWrap .customBtn:hover {
-  background-color: #1F2322;
-  border-color: #AF0005;
+  background-color: #fff;
   color: #AF0005;
 }
 
