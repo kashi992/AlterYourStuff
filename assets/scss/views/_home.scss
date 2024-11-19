@@ -617,10 +617,10 @@
         flex-direction: column;
         margin-top: 40px;
         gap: 15px;
-        padding: 0 15px;
+        padding: 0 60px;
 
         p {
-            font-size: var(--fs18);
+            font-size: var(--fs22);
         }
 
         .quoteIcon {
@@ -634,6 +634,7 @@
             margin-bottom: 16px;
             margin-left: auto;
             margin-right: auto;
+            display: none;
         }
 
         h3 {
@@ -642,11 +643,47 @@
         }
     }
 
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 45px;
+        width: 45px;
+        background-color: $primaryColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        z-index: 2;
+        overflow-x: hidden;
+        .chevron{
+            height: 15px;
+            width: 15px;
+        }
+        .chevron.__left {
+            border-left-color: $whiteColor;
+            border-bottom-color: $whiteColor;
+        }
+        .chevron.__right {
+            border-right-color: $whiteColor;
+            border-top-color: $whiteColor;
+        }
+
+        &.slick-prev-testi {
+            left: 0;
+        }
+
+        &.slick-next-testi {
+            right: 0;
+        }
+    }
+
     .slick-dots {
         display: flex;
         justify-content: center;
         gap: 10px;
         margin-top: 40px;
+        display: none !important;
 
         li {
             width: 16px;

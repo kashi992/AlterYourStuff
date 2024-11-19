@@ -1366,10 +1366,10 @@ footer {
   flex-direction: column;
   margin-top: 40px;
   gap: 15px;
-  padding: 0 15px;
+  padding: 0 60px;
 }
 .testimonailWrap .tesimonialBox p {
-  font-size: var(--fs18);
+  font-size: var(--fs22);
 }
 .testimonailWrap .tesimonialBox .quoteIcon {
   width: 40px;
@@ -1381,16 +1381,50 @@ footer {
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
+  display: none;
 }
 .testimonailWrap .tesimonialBox h3 {
   font-size: var(--fs22);
   font-weight: 700;
+}
+.testimonailWrap .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45px;
+  width: 45px;
+  background-color: #AF0005;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 2;
+  overflow-x: hidden;
+}
+.testimonailWrap .slick-arrow .chevron {
+  height: 15px;
+  width: 15px;
+}
+.testimonailWrap .slick-arrow .chevron.__left {
+  border-left-color: #fff;
+  border-bottom-color: #fff;
+}
+.testimonailWrap .slick-arrow .chevron.__right {
+  border-right-color: #fff;
+  border-top-color: #fff;
+}
+.testimonailWrap .slick-arrow.slick-prev-testi {
+  left: 0;
+}
+.testimonailWrap .slick-arrow.slick-next-testi {
+  right: 0;
 }
 .testimonailWrap .slick-dots {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 40px;
+  display: none !important;
 }
 .testimonailWrap .slick-dots li {
   width: 16px;
@@ -1579,7 +1613,6 @@ footer {
   .testimonailWrap .tesimonialBox {
     margin-top: 20px;
     gap: 10px;
-    padding: 0 10px;
   }
   .contactRow .contactRowInner {
     grid-template-columns: 1fr 1fr;
@@ -1699,5 +1732,16 @@ footer {
   }
   .contactRow p {
     font-size: 18px;
+  }
+  .testimonailWrap .slick-arrow {
+    height: 30px;
+    width: 30px;
+  }
+  .testimonailWrap .slick-arrow .chevron {
+    height: 12px;
+    width: 12px;
+  }
+  .testimonailWrap .tesimonialBox {
+    padding: 0 34px;
   }
 }/*# sourceMappingURL=style.css.map */

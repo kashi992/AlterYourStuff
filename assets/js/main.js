@@ -132,10 +132,14 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        arrows: false,
+        arrows: true,
         swipe: true,
         swipeToSlide: true,
         dots: true,
+
+        nextArrow: '.slick-next-testi',
+        prevArrow: '.slick-prev-testi',
+
         responsive: [{
             breakpoint: 1100,
             settings: {

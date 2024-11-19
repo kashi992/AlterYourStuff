@@ -170,7 +170,6 @@
     .testimonailWrap .tesimonialBox {
         margin-top: 20px;
         gap: 10px;
-        padding: 0 10px;
     }
     .contactRow .contactRowInner {
         grid-template-columns: 1fr 1fr;
@@ -293,6 +292,17 @@ margin-bottom: 0;
     }
     .contactRow p {
         font-size: 18px;
+    }
+    .testimonailWrap .slick-arrow {
+        height: 30px;
+        width: 30px;
+    }
+    .testimonailWrap .slick-arrow .chevron {
+        height: 12px;
+        width: 12px;
+    }
+    .testimonailWrap .tesimonialBox {
+        padding: 0 34px;
     }
  
 }
